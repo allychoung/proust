@@ -1,0 +1,36 @@
+div.main-content {
+    padding: 3em;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+    color: black;
+    font-weight: 600;
+  }
+
+a,
+a:visited,
+a:hover {
+    color: black;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+a:hover {
+ color: rgb(99, 98, 96) ;
+}
+
+.spacer {
+    flex: 1;
+}
+
+span {
+    font-size: 1.5em;
+}
