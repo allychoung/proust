@@ -1,13 +1,13 @@
 <div class="toolbar">
-  <a href="#">Home</a>
-  <span>Proust and Understanding the Self</span>
+  <!-- <a href="">Home</a> -->
+  <span class="title">Proust and Understanding the Self</span>
   <div class="spacer"></div>
-  <a href="#">Introduction</a>
-  <a href="#">Walkthrough</a>
-  <a href="#">Project Home</a>
-  <a href="#">Works Cited</a>
+  <button (click)="clickNav('start')"><span>Introduction</span></button>
+  <button (click)="clickNav('project')"><span>Project</span></button>
+  <button (click)="clickNav('cited')"><span>Works Cited</span></button>
 </div>
 <div class="main-content">
-  <h1>Proust and Understanding the Self</h1>
-  <app-content-body phase="start"></app-content-body>
+  <app-content-body [phase]="phase" ></app-content-body>
+  <button *ngIf="phase == 'start'" class="next-link" (click)="clickNav('project')">Click to advance to Final Project</button>
+  <button *ngIf="phase == 'project'" class="next-link" (click)="clickNav('cited')">Click to advance to Works Cited</button>
 </div>

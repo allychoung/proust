@@ -9,3 +9,5 @@ export class ContentBodyComponent {
   @Input()
   phase!: string;
 }
+
+
