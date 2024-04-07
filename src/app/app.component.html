@@ -8,6 +8,23 @@
 </div>
 <div class="main-content">
   <app-content-body [phase]="phase" ></app-content-body>
-  <button *ngIf="phase == 'start'" class="next-link" (click)="clickNav('project')">Click to advance to Final Project</button>
-  <button *ngIf="phase == 'project'" class="next-link" (click)="clickNav('cited')">Click to advance to Works Cited</button>
+  <div class="bottom-link">
+    <button *ngIf="phase == 'project'" class="next-link m-0" (click)="clickNav('start')">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Click here to return to the Introduction page</span>
+    </button>  
+    <button *ngIf="phase == 'cited'" class="next-link m-0" (click)="clickNav('project')">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Click here to return to the Final Project page</span>
+    </button>  
+    <div class="spacer"></div>
+    <button *ngIf="phase == 'start'" class="next-link m-0" (click)="clickNav('project')">
+      <span>Click here to advance to the Final Project page</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button *ngIf="phase == 'project'" class="next-link m-0" (click)="clickNav('cited')">
+      <span>Click here to advance to the Works Cited page</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>  
+  </div>
 </div>

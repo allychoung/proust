@@ -3,7 +3,7 @@ div.main-content {
 }
 
 .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -23,21 +23,10 @@ button {
     margin: .5em;
 }
 
-button span:hover {
+button:hover {
     color: rgb(99, 98, 96) ;
 }
 
-a,
-a:visited,
-a:hover {
-    color: black;
-    text-decoration: none;
-    margin: 0 1em;
-}
-
-a:hover {
- color: rgb(99, 98, 96) ;
-}
 
 .spacer {
     flex: 1;
@@ -46,4 +35,17 @@ a:hover {
 span.title {
     margin-left: 1em;
     font-size: 1.5em;
+}
+
+.bottom-link {
+    display: flex;
+    flex-direction: row;
+    button {
+        background-color: rgb(194, 194, 194);
+        border-radius: .5em;
+        padding: .5em 1em;
+    }
+    i {
+        margin: 0 .5em;
+    }
 }
