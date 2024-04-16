@@ -7,22 +7,3 @@
 h1 {
     font-size: 72px;
 }
-
-a {
-    background-color: var(--off-white);
-    color: black;
-    text-decoration: none;
-    margin-right: 0;
-    padding: 1em;
-    border-radius: 5px;
-
-    &:hover {
-        background-color: var(--dark-blue);
-    }
-}
-
-.next-link {
-    padding: 1em;
-    display: flex;
-    justify-content: end;
-}
