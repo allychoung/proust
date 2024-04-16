@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proust';
-  phase: string = 'start';
-
-  clickNav(p : string): void {
-    this.phase = p
-  }
 }

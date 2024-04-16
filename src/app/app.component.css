@@ -1,5 +1,10 @@
+
+
 div.main-content {
-    padding: 4em 15em;
+    padding: 4em 10em 0em 10em;
+    /* height: 80vh; */
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .toolbar {
@@ -10,21 +15,28 @@ div.main-content {
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: rgb(194, 194, 194);
-    color: black;
+    background-color: var(--dark-gray);
+    color: var(--off-white);
     font-weight: 600;
   }
 
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 5px;
-    margin: .5em;
+  .toolbar:hover {
+    background-color: var(--dark-blue);
 }
 
-button:hover {
-    color: rgb(99, 98, 96) ;
+.toolbar img {
+    width: 2em;
+}
+
+a {
+    padding: 5px;
+    margin: .5em;
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--off-white) ;
 }
 
 
@@ -40,7 +52,7 @@ span.title {
 .bottom-link {
     display: flex;
     flex-direction: row;
-    button {
+    a {
         background-color: rgb(194, 194, 194);
         border-radius: .5em;
         padding: .5em 1em;
@@ -49,3 +61,5 @@ span.title {
         margin: 0 .5em;
     }
 }
+
+

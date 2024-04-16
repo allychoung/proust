@@ -1,20 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    /* background-color: antiquewhite; */
-    min-height: 100%;
+    background-color: var(--dark-gray);
+    /* max-height: 100%; */
+    overflow-y: auto;
 }
 
 h1, h2, h3, h4, h5, h6, a, span {
-    font-family: "PT Serif", serif;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;    
     font-weight: 700;
-
 }
 
 p {
-    font-size: 14px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Garamond;
 }
 
 .m-0 {
     margin: 0;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.p-container {
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+:root {
+    --medium-blue: #5C9EAD;
+    --dark-blue: #326273;
+    --off-white: #EEEEEE;
+    --purple: #BDBBE0;
+    --dark-gray: #363636;
+    --animate-duration: 1200ms;
+    --animate-delay: 0.9s;
+  }
+  
+
+.tangerine-container {
+    background-color: var(--tangerine);
+    color: black;
+}
+
+.blue-container {
+    background-color: var(--off-white);
+    color: black;
 }
