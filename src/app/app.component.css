@@ -18,11 +18,17 @@ div.main-content {
     background-color: var(--dark-gray);
     color: var(--off-white);
     font-weight: 600;
-  }
 
-  .toolbar:hover {
-    background-color: var(--dark-blue);
-}
+    a {
+        padding: 0.5em;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    :hover {
+        background-color: var(--dark-blue);
+    }
+  }
 
 .toolbar img {
     width: 2em;
