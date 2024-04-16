@@ -1,0 +1,6 @@
+img {
+    height: 50vh;
+    &:hover {
+        border: 1em dashed rgb(173, 35, 35);
+    }
+}
