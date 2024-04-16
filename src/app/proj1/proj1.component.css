@@ -4,3 +4,15 @@ img {
         border: 1em dashed rgb(173, 35, 35);
     }
 }
+
+.red-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.red {
+    color: rgb(173, 35, 35);
+}
