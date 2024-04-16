@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/proust",
+            "outputPath": "dist/proust/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -92,6 +92,59 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/proust/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "proust:build:development",
+              "serverTarget": "proust:server:development"
+            },
+            "production": {
+              "browserTarget": "proust:build:production",
+              "serverTarget": "proust:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "proust:build:production",
+              "serverTarget": "proust:server:production"
+            },
+            "development": {
+              "browserTarget": "proust:build:development",
+              "serverTarget": "proust:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

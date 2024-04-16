@@ -19,7 +19,7 @@ import { StatementComponent } from './statement/statement.component';
     StatementComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
