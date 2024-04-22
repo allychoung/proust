@@ -1,0 +1,27 @@
+.frame-poem p {
+    margin: 2px;
+    font-size: 16px;
+}
+
+.frame-poem {
+    border: 20px solid gold;
+    overflow-y: auto;
+    max-height: 20vh;
+    background-color: white;
+    color: black;
+    width: 40%;
+}
+
+.bedroom-wall {
+    padding: 1em;
+    padding-bottom: 10em;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pink {
+    background-color: pink;
+    padding-top: 2em;
+}

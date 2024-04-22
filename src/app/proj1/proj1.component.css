@@ -16,3 +16,8 @@ img {
 .red {
     color: rgb(173, 35, 35);
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 10s;
+  }
+  

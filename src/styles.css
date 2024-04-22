@@ -121,3 +121,7 @@ h3 {
   .white-bg {
     background-color: white;
   }
+
+  .p-1 {
+    padding: 1em;
+  }
