@@ -59,10 +59,11 @@ h3 {
     --dark-gray: #363636;
     --animate-duration: 1200ms;
     --animate-delay: 0.9s;
+    --tangerine: #ff8636;
   }
   
 
-.tangerine-container {
+.tangerine {
     background-color: var(--tangerine);
     color: black;
 }
@@ -120,6 +121,7 @@ h3 {
 
   .white-bg {
     background-color: white;
+    color: black;
   }
 
   .p-1 {

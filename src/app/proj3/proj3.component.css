@@ -4,24 +4,42 @@
 }
 
 .frame-poem {
-    border: 20px solid gold;
+    border: 10px solid rgb(215, 233, 154);
     overflow-y: auto;
-    max-height: 20vh;
+    max-height: 30vh;
     background-color: white;
-    color: black;
-    width: 40%;
+    color: #000000;
+}
+
+.column {
+    width: 50%;
+    padding: 1em;
 }
 
 .bedroom-wall {
-    padding: 1em;
-    padding-bottom: 10em;
-    background-color: pink;
+    padding: 0 1em 2em 0;
+    background-color: rgb(255, 224, 229);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .pink {
-    background-color: pink;
-    padding-top: 2em;
+    background-color: rgb(255, 224, 229);
+    padding: 2em 1em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.weird-margin {
+    margin-top: -10em;
+}
+
+.more-margin {
+    margin-bottom: -10em;
+}
+
+.reflection {
+    background-color: black;
+    color: white;
 }

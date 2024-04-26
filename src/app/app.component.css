@@ -2,9 +2,6 @@
 
 div.main-content {
     padding: 4em 10em 0em 10em;
-    /* height: 80vh; */
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .toolbar {
@@ -21,13 +18,14 @@ div.main-content {
     font-weight: 600;
 
     a {
-        padding: 0.5em;
-        border-radius: 5px;
+        padding: 1em;
         font-size: 12px;
         font-weight: 200;
     }
-    :hover {
-        background-color: var(--dark-blue);
+
+    a:hover {
+        border-bottom: 5px solid var(--dark-blue);
+        transition: .1s linear;
     }
   }
 
@@ -42,9 +40,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--off-white) ;
-}
 
 
 .spacer {

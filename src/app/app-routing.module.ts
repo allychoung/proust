@@ -35,20 +35,20 @@ export const routes: Routes = [
 },
 {
   path: 'p4',
-  component: Proj4Component
-},
-{
-  path: 'p5',
   component: Proj5Component
 },
 {
-  path: 'p6',
+  path: 'p5',
   component: Proj6Component
 },
 {
-  path: 'p7',
+  path: 'conclusion',
   component: Proj7Component
 },
+// {
+//   path: 'p7',
+//   component: Proj7Component
+// },
 
   {
     path: 'cited',

@@ -3,3 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.white-bg {
+    padding: 1em;
+    margin: 0em 2em;
+}
