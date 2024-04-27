@@ -35,11 +35,7 @@ export const routes: Routes = [
 },
 {
   path: 'p4',
-  component: Proj5Component
-},
-{
-  path: 'p5',
-  component: Proj6Component
+  component: Proj6Component,
 },
 {
   path: 'conclusion',
