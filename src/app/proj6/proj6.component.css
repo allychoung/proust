@@ -1,0 +1,12 @@
+.poem p {
+    margin: 2px 10em;
+}
+
+.poem h3 {
+    text-align: start;
+    margin-left: 10em;
+}
+
+.white-bg {
+    padding: 1em 2em;
+}
